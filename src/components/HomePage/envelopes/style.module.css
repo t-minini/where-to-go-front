@@ -1,0 +1,28 @@
+.communityContainer {
+  height: 75rem;
+}
+.Img2 {
+  margin: 0rem;
+  position: relative;
+  bottom: -6.25rem;
+  left: 6rem;
+  width: 40rem;
+  height: 30rem;
+}
+.Img3 {
+  margin: 0rem;
+  position: relative;
+  bottom: 4rem;
+  left: 55rem;
+  width: 30rem;
+  height: 40rem;
+}
+.text {
+  font-size: 35px;
+  position: relative;
+  bottom: 22rem;
+  left: 6.25rem;
+  width: 44rem;
+  text-transform: lowercase;
+  font-style: italic;
+}

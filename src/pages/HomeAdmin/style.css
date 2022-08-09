@@ -1,0 +1,13 @@
+.adminDivs {
+  margin-top: 6.2rem;
+  align-items: flex-start;
+  height: 800px;
+  width: 100%;
+  flex-direction: row;
+  background-color: #DEDBD2;
+}
+.picImgT {
+  display: flex;
+  width: 275px;
+  height: 230px;
+}

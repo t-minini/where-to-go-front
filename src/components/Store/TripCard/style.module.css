@@ -1,0 +1,84 @@
+.categoriesDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-top: 0.19rem;
+  width: 34rem;
+}
+.categoriesDiv p {
+  font-size: 1.15rem;
+  --s: 0.1em; /* the thickness of the line */
+  --c: #4a5759; /* the color */
+  color: #0000;
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.categoriesDiv p:hover {
+  --_p: 100%;
+  --_s: 0.3s;
+}
+.cardsDiv {
+  border-radius: 0.625rem;
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  height: 40rem;
+  overflow-y: scroll;
+  background-color: #dedbd2;
+}
+.card {
+  width: 14.5rem;
+  height: 20rem;
+  background: #dedbd2;
+  border-radius: 1.875rem;
+  background: #dedbd2;
+  border: 0.0625rem solid #99968e;
+  background: #dedbd2;
+  box-shadow: -0.3125rem 0.3125rem 0rem #99968e;
+}
+.cardImg {
+  width: 100%;
+  height: 14rem;
+  border-radius: 1.875rem 1.875rem 0rem 0rem;
+}
+.infoCards {
+  display: flex;
+  justify-content: space-between;
+}
+.infoPrice {
+  width: 3.125rem;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+}
+.infoDestination {
+  padding: 0rem -0.04rem;
+  width: 20.625rem;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+.infoCards p {
+  font-weight: 43.75rem;
+  padding: 0rem 0.625rem 0rem 0.3125rem;
+  font-size: 1.4rem;
+  background-color: #cac8c0;
+  font-family: "Roboto", sans-serif;
+}
+.cardGroupBtn {
+  display: flex;
+  justify-content: space-between;
+  width: 14.375rem;
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  margin-top: -0.625rem;
+}
+.cardGroupBtn p {
+  margin-left: 0.3125rem;
+}

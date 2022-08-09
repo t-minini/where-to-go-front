@@ -1,0 +1,65 @@
+.emptyCart {
+	font-size: 1.25rem;
+}
+.tableTr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+	width: 305px;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+.tableTd {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 370px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+.tdPrice {
+	width: 40px;
+	margin-right: 50px;
+}
+.tdQuantity {
+	width: 20px;
+	margin-right: 40px;
+}
+.tdDestination {
+	width: 170px;
+}
+.thDest {
+	text-align: left;
+	width:650px;
+}
+.thPrice {
+	text-align: left;
+	width: 300px;
+}
+.thQuant {
+	width: 150px;
+}
+.btns {
+	display: flex;
+	font-size: 20px;
+	gap:5px;
+}
+.totals {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	height: 30px;
+	width: 370px;
+}
+.totals h3 {
+	font-size: 23px;
+}
+.btnDiv {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 20px;
+}

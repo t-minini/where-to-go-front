@@ -1,0 +1,73 @@
+.userNav {
+  position: fixed;
+  z-index: 1;
+}
+.userContainer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color:#B0C4B1;
+  font-family: 'Roboto', sans-serif;
+}
+.h1Container {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid black;
+  font-size: 30px;
+  margin-top: 100px;
+  padding-left: 30px;
+  background-color: #dedbd2;
+  font-family: 'Roboto', sans-serif;
+}
+.userCardTextContainer {
+  width: 80%;
+  font-family: 'Roboto', sans-serif;
+}
+.userCardTextContainer h2 {
+  font-size: 40px;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+.emailH2 {
+  position: relative;
+  bottom: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+.emailP {
+  position: relative;
+  top: -120px;
+  font-family: 'Roboto', sans-serif;
+}
+.userCardTextContainer p {
+  position: relative;
+  bottom: 40px;
+  font-size: 29px;
+  padding-left: 30px;
+}
+.userDiv {
+  width: 20%;
+  font-family: 'Roboto', sans-serif;
+}
+.imgDiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 100px;
+  width: 300px;
+}
+.userImg {
+  width: 230px;
+  height: 230px;
+  border-radius: 130px;
+  margin-left: 50px;
+}
+.btns {
+  width: 300px;
+  height: 50px;
+  margin-top: 150px;
+  margin-right: -40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

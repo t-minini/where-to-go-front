@@ -1,0 +1,10 @@
+.oderDiv {
+    width: 100%;
+    height: 767px;
+    overflow-y: scroll;
+}
+.btns {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}

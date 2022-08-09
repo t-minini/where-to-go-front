@@ -1,0 +1,12 @@
+.divDVT {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  padding: 30px;
+  height: 768px;
+  background-color: #B0C4B1;
+  overflow-y: scroll;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Inter:wght@100&family=Roboto:wght@100;400&display=swap');
+* {
+	font-family: 'Lato', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+/* width */
+::-webkit-scrollbar {
+	width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: red;
+	border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
