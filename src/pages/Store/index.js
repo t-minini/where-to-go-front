@@ -1,15 +1,12 @@
 import { TripCard } from "../../components/Store/TripCard";
 import { Cart } from "../../components/Store/Cart";
 import { CartProvider } from "react-use-cart";
-import { NavBar } from "../../components/HomePage/navBar";
 import { ShoppingCartOutlined } from "@ant-design/icons";
-import { ContactUs } from "../../components/HomePage/contactUs";
 import style from "../Store/style.module.css";
 
 export function Store() {
   return (
     <>
-      <NavBar />
       <div
         className={style.containerStore}
       >
@@ -25,7 +22,6 @@ export function Store() {
           </div>
         </CartProvider>
       </div>
-      <ContactUs />
     </>
   );
 }

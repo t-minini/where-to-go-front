@@ -1,11 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../contexts/authContext";
-import { NavBar } from "../../components/HomePage/navBar";
 import { ViewOrders } from "../../components/HomeUser/ViewOrders";
 import { EditUser } from "../../components/HomeUser/EditUser";
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
-import { ContactUs } from "../../components/HomePage/contactUs";
 import style from "./style.module.css";
 import { api } from "../../api/api";
 
@@ -42,7 +40,6 @@ export function HomeUser() {
   return (
     <>
       <div>
-        <NavBar className={style.userNav} />
         <div className={style.h1Container}>
           <h1>User Details</h1>
         </div>
@@ -71,7 +68,6 @@ export function HomeUser() {
         </div>
         <ViewOrders />
       </div>
-      <ContactUs />
     </>
   );
 }

@@ -4,7 +4,7 @@ import { api } from "../../../api/api";
 import { Form, Card, Input, Button } from "antd";
 import style from "./style.module.css";
 
-import { NavBar } from "../../../components/HomePage/navBar";
+import { NavBar } from "../../HomePage/navBar";
 
 export function EditTrip() {
   const { id } = useParams();

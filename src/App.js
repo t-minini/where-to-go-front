@@ -3,16 +3,19 @@ import { HomePage } from "./pages/HomePage/index";
 import { AuthContextComponent } from "./contexts/authContext";
 import { HomeUser } from "./pages/HomeUser/index";
 import { ErrorPage } from "./pages/ErrorPage";
-import { HomeAdmin } from "./pages/HomeAdmin/index";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { Store } from "./pages/Store/index";
-import { EditTrip } from "./pages/HomeAdmin/EditTrip";
+import { EditTrip } from "./components/HomeAdmin/EditTrip";
 import { ProtectedRouteAdmin } from "./components/ProtectedRouteAdmin";
+import { HomeAdmin } from "./pages/HomeAdmin";
+import { NavBar } from "./components/HomePage/navBar";
+import { ContactUs } from "./components/HomePage/contactUs";
 
 function App() {
   return (
     <>
       <AuthContextComponent>
+        <NavBar/>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/store" element={<Store />} />
@@ -31,6 +34,7 @@ function App() {
           />
         </Routes>
       </AuthContextComponent>
+      <ContactUs/>
     </>
   );
 }
