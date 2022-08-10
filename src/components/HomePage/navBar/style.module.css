@@ -28,7 +28,7 @@ a.textStore:hover {
 }
 .textContact {
   position: fixed;
-  left: 9.375rem;
+  left: 8rem;
   padding: 0rem 1.25rem;
   top: 0.5rem;
 }
@@ -37,7 +37,7 @@ a.textContact:hover {
 }
 .textProfile {
   position: fixed;
-  right: 12.5rem;
+  right: 10rem;
   padding: 0rem 1.25rem;
   top: 0.5rem;
 }
@@ -82,13 +82,13 @@ p.textOff:hover {
   justify-content: space-evenly;
   margin-right: 0.625rem;
 }
-.loginP {
+/* .loginP {
   margin: 0rem;
-}
-.loginModal {
+} */
+/* .loginModal {
   position: relative;
   right: 15.625rem;
-}
+} */
 .img {
-  height: 430px;
+  height: 26.8rem;
 }

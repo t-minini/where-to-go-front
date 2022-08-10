@@ -1,11 +1,11 @@
 .helloContainer {
   background-image: url("../../assets/images/home-page-img.jpg");
-  background-size: 100%;
+  background-size: cover;
   height: 53.1rem;
   width: 100%;
   padding: 2.5rem;
   margin-top: 6.25rem;
-  object-fit: contain;
+  /* object-fit:contain; */
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;

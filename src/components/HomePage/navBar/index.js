@@ -3,9 +3,10 @@ import { useNavigate, useLocation, NavLink } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../../../contexts/authContext";
 import { Link } from "react-scroll";
-import Logo from "./../../assets/images/logo.png"
 import { SignUpModal } from "../signupModal";
 import { LoginModal } from "../loginModal";
+// import Logo from "./../../assets/images/logo.png"
+
 
 export function NavBar() {
   const { loggedInUser } = useContext(AuthContext);
@@ -54,11 +55,11 @@ export function NavBar() {
         </div>
         <div>{loggedInUser ? null : <SignUpModal />}</div>
       </div>
-      <div className={style.img}>
+      {/* <div className={style.img}>
         <NavLink to="/">
         <img src={Logo} alt="logo" />
         </NavLink>
-      </div>
+      </div> */}
       <div className={style.navLeft}>
         <div className={style.profileBtn}>
           {loggedInUser ? (
