@@ -1,94 +1,96 @@
-import { useState } from "react";
-import { api } from "../../../api/api";
-import { Form, Input, Button, Modal } from "antd";
+// import { useState } from "react";
+// import { api } from "../../../api/api";
+// import { Form } from "antd";
+
+// import { Input, Button, Modal } from "antd";
 
 export function CreateTrip() {
-  const [forma, setForma] = useState({
-    destination: "",
-    category: "Adventure",
-    inStock: "",
-    description: "",
-    unitPrice: "",
-    tripImg: "",
-  });
+  // const [forma, setForma] = useState({
+  //   destination: "",
+  //   category: "Adventure",
+  //   inStock: "",
+  //   description: "",
+  //   unitPrice: "",
+  //   tripImg: "",
+  // });
 
-  const [img, setImg] = useState("");
+  // const [img, setImg] = useState("");
 
-  function handleForma(e) {
-    setForma({ ...forma, [e.target.name]: e.target.value });
-  }
+  // function handleForma(e) {
+  //   setForma({ ...forma, [e.target.name]: e.target.value });
+  // }
 
-  function handleImage(e) {
-    setImg(e.target.files[0]);
-  }
-  const [visible, setVisible] = useState(false);
-  const [confirmLoading, setConfirmLoading] = useState(false);
+  // function handleImage(e) {
+  //   setImg(e.target.files[0]);
+  // }
+  // const [visible, setVisible] = useState(false);
+  // const [confirmLoading, setConfirmLoading] = useState(false);
 
-  const showModal = () => {
-    setVisible(true);
-  };
+  // const showModal = () => {
+  //   setVisible(true);
+  // };
 
-  async function handleUpload() {
-    try {
-      const uploadData = new FormData();
-      uploadData.append("picture", img);
+  // async function handleUpload() {
+  //   try {
+  //     const uploadData = new FormData();
+  //     uploadData.append("picture", img);
 
-      const response = await api.post("/upload-image", uploadData);
+  //     const response = await api.post("/upload-image", uploadData);
 
-      return response.data.url;
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //     return response.data.url;
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
-  const handleOk = async (e) => {
-    setConfirmLoading(true);
-    setTimeout(() => {
-      setVisible(false);
-      setConfirmLoading(false);
-    }, 2000);
+  // const handleOk = async (e) => {
+  //   setConfirmLoading(true);
+  //   setTimeout(() => {
+  //     setVisible(false);
+  //     setConfirmLoading(false);
+  //   }, 2000);
 
-    e.preventDefault();
-    delete forma._id;
-    const imgURL = await handleUpload();
+  //   e.preventDefault();
+  //   delete forma._id;
+  //   const imgURL = await handleUpload();
 
-    try {
-      await api.post(`/trip/add-trip`, { ...forma, tripImg: imgURL });
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //   try {
+  //     await api.post(`/trip/add-trip`, { ...forma, tripImg: imgURL });
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  const handleCancel = () => {
-    console.log("Clicked cancel button");
-    setVisible(false);
-  };
+  // const handleCancel = () => {
+  //   console.log("Clicked cancel button");
+  //   setVisible(false);
+  // };
 
-  const [form] = Form.useForm();
-  const [formLayout, setFormLayout] = useState("horizontal");
+  // const [form] = Form.useForm();
+  // const [formLayout, setFormLayout] = useState("horizontal");
 
-  const onFormLayoutChange = ({ layout }) => {
-    setFormLayout(layout);
-  };
+  // const onFormLayoutChange = ({ layout }) => {
+  //   setFormLayout(layout);
+  // };
 
-  const formItemLayout =
-    formLayout === "horizontal"
-      ? {
-          labelCol: {
-            span: 4,
-          },
-          wrapperCol: {
-            span: 14,
-          },
-        }
-      : null;
+  // const formItemLayout =
+  //   formLayout === "horizontal"
+  //     ? {
+  //         labelCol: {
+  //           span: 4,
+  //         },
+  //         wrapperCol: {
+  //           span: 14,
+  //         },
+  //       }
+  //     : null;
 
   return (
     <div>
-      <Button type="primary" size="default" onClick={showModal}>
+      {/* <Button type="primary" size="default" onClick={showModal}>
         Create Trip
-      </Button>
-      <Modal
+      </Button> */}
+      {/* <Modal
         title="CREATE TRIP"
         visible={visible}
         onOk={handleOk}
@@ -97,8 +99,8 @@ export function CreateTrip() {
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         width={400}
-      >
-        <Form
+      > */}
+        {/* <Form
           {...formItemLayout}
           layout={formLayout}
           form={form}
@@ -106,17 +108,17 @@ export function CreateTrip() {
             layout: formLayout,
           }}
           onValuesChange={onFormLayoutChange}
-        >
-          <Form.Item label="Destination">
+        > */}
+          {/* <Form.Item label="Destination">
             <Input
               name="destination"
               placeholder="Destination"
               value={forma.destination}
               onChange={handleForma}
             />{" "}
-          </Form.Item>
+          </Form.Item> */}
 
-          <Form.Item label="Category">
+          {/* <Form.Item label="Category">
             <select
               name="category"
               placeholder="Category"
@@ -129,36 +131,36 @@ export function CreateTrip() {
               <option value="Culture">Culture</option>
               <option value="Romance">Romance</option>
             </select>
-          </Form.Item>
-          <Form.Item label="Description">
+          </Form.Item> */}
+          {/* <Form.Item label="Description">
             <Input
               name="description"
               placeholder="Description"
               value={forma.description}
               onChange={handleForma}
             />
-          </Form.Item>
-          <Form.Item label="In Stock">
+          </Form.Item> */}
+          {/* <Form.Item label="In Stock">
             <Input
               name="inStock"
               placeholder="In Stock"
               value={forma.inStock}
               onChange={handleForma}
             />
-          </Form.Item>
-          <Form.Item label="Price">
+          </Form.Item> */}
+          {/* <Form.Item label="Price">
             <Input
               name="unitPrice"
               placeholder="Price"
               value={forma.unitPrice}
               onChange={handleForma}
             />
-          </Form.Item>
-                    <Form.Item label="Trip Pic Here" htmlFor="formImg">
+          </Form.Item> */}
+                    {/* <Form.Item label="Trip Pic Here" htmlFor="formImg">
             <Input type="file" id="formImg" onChange={handleImage} />
-          </Form.Item>
-        </Form>
-      </Modal>
+          </Form.Item> */}
+        {/* </Form> */}
+      {/* </Modal> */}
     </div>
   );
 }

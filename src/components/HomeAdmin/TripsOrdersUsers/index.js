@@ -4,6 +4,7 @@ import { ViewTrip } from "../ViewTrip";
 import { ViewUser } from "../ViewUser";
 import { Button } from "antd";
 import { CreateTrip } from "../CreateTrip";
+import { CreateNewTrip } from "../CreateNewTrip";
 import { Col, Row } from "antd";
 import "./style.css";
 
@@ -48,6 +49,7 @@ export function TripsOrdersUsers() {
             </Button>
           </Col>
           <Col span={100}>{showTrips && <CreateTrip />}</Col>
+          <CreateNewTrip/>
         </Row>
         {showTrips && <ViewTrip />}
         {showOrders && <ViewOrder />}
