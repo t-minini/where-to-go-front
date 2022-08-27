@@ -1,4 +1,4 @@
-# Project #3: <en> Where to Go?
+# Project #3: <en> Where to Go? (Front-end)
 
 ## About the project 💭
 
