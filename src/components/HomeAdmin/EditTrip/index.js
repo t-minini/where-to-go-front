@@ -129,7 +129,7 @@ export function EditTrip() {
                 <Button>Back</Button>
               </Link>
 
-              <Button onClick={handleUpdate}>Add Changes</Button>
+              <Button onClick={handleUpdate}>Save Changes</Button>
 
               <Button onClick={deleteTrip}>Delete Trip</Button>
             </div>

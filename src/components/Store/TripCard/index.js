@@ -100,7 +100,7 @@ export function TripCard() {
 								/>
 								<div className={style.infoCards}>
 									<p className={style.infoDestination} >{currentTrip.destination}</p>
-									<p className={style.infoPrice}>${currentTrip.unitPrice}</p>
+									<p className={style.infoPrice}>€{currentTrip.unitPrice}</p>
 								</div>
 								<div className={style.cardGroupBtn}>
 									<CardDetails trip={currentTrip} />
