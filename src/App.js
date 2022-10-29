@@ -8,14 +8,14 @@ import { Store } from "./pages/Store/index";
 import { EditTrip } from "./components/HomeAdmin/EditTrip";
 import { ProtectedRouteAdmin } from "./components/ProtectedRouteAdmin";
 import { HomeAdmin } from "./pages/HomeAdmin";
-import { NavBar } from "./components/HomePage/navBar";
+import { Navbar } from "./components/HomePage/Navbar/Navbar";
 import { ContactUs } from "./components/HomePage/contactUs";
 
 function App() {
   return (
     <>
       <AuthContextComponent>
-        <NavBar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/store" element={<Store />} />
@@ -34,7 +34,7 @@ function App() {
           />
         </Routes>
       </AuthContextComponent>
-      <ContactUs/>
+      <ContactUs />
     </>
   );
 }

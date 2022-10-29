@@ -1,0 +1,39 @@
+.whereContainer {
+  background-image: url("../../assets/images/home-page-img.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 40px;
+  padding-left: 90px;
+  padding-top: 70px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.whereContainer h1 {
+  width: 70%;
+  font-size: 9.2rem;
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0;
+  line-height: 7rem;
+  margin-bottom: 60px;
+}
+
+.whereContainer p {
+  text-align: left;
+  width: 50%;
+  font-size: 2.2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  letter-spacing: 0.0625rem;
+  margin-bottom: 40px;
+}
+.signUpBtn {
+  padding: 10px 60px;
+  background-color: #dedbd2;
+  border-radius: 50px;
+  font-size: 3rem;
+  color: black;
+}

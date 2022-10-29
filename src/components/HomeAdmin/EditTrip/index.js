@@ -4,7 +4,7 @@ import { api } from "../../../api/api";
 import { Form, Card, Input, Button } from "antd";
 import style from "./style.module.css";
 
-import { NavBar } from "../../HomePage/navBar";
+import { Navbar } from "../../HomePage/Navbar/Navbar";
 
 export function EditTrip() {
   const { id } = useParams();
@@ -69,7 +69,7 @@ export function EditTrip() {
 
   return (
     <>
-      <NavBar />
+      <Navbar />
       {/* <Card style={{ borderRadius: 50, width: "600px" }} > */}
       <div className={style.card}>
         <Card style={{ width: "550px" }}>

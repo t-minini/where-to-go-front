@@ -1,0 +1,8 @@
+.signUpBtn {
+  padding: 10px 60px 20px;
+  background-color: #dedbd2;
+  border-radius: 50px;
+  font-size: 3rem;
+  color: black;
+  cursor: pointer;
+}

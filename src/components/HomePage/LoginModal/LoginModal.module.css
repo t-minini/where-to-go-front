@@ -1,0 +1,14 @@
+.logInText {
+  padding: 0 25px 0;
+  margin: 0;
+  background-color: #dedbd2;
+  border-radius: 25px;
+  border: solid 1px #dedbd2;
+  color: black;
+  cursor: pointer;
+}
+
+.logInText:hover {
+  background-color: #4a5759;
+  color: #dedbd2;
+}

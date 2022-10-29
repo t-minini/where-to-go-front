@@ -1,0 +1,50 @@
+.navbarContainer {
+  position: fixed;
+  z-index: 1;
+  height: 70px;
+  width: 100%;
+  background-color: #4a5759;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbarText {
+  color: black;
+}
+
+.navbarText:hover {
+  color: #dedbd2;
+}
+
+.logOutText {
+  padding: 0 25px 0;
+  margin: 0;
+  background-color: #dedbd2;
+  border-radius: 25px;
+  border: solid 1px #dedbd2;
+  color: black;
+  cursor: pointer;
+}
+
+.logOutText:hover {
+  background-color: #4a5759;
+  color: #dedbd2;
+}
+
+.logoImg {
+  height: 50px;
+  width: 225px;
+  object-position: -70px -190px;
+  object-fit: none;
+}
+
+.navbarContent {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  gap: 30px;
+}

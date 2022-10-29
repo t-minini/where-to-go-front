@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import { api } from "../../../api/api";
+import React, { useState } from "react";
+import style from "./SignUpModal.module.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Modal, DatePicker, Form, Input, Checkbox } from "antd";
-import style from "./style.module.css";
 
 export const SignUpModal = () => {
   const [visible, setVisible] = useState(false);
@@ -26,7 +26,7 @@ export const SignUpModal = () => {
     setComponentSize(size);
   };
 
-  const handleOk = async (e) => {
+  const handleSubmit = async (e) => {
     setConfirmLoading(true);
     setTimeout(() => {
       setVisible(false);
@@ -85,42 +85,38 @@ export const SignUpModal = () => {
   }
 
   return (
-    <div>
+    <section>
       {location.pathname === "/" && (
-        <p
-          type="primary"
-          onClick={showModal}
-          className={`${style.text} ${style.textSignUp}`}
-          href
-        >
-          Sign Up
-        </p>
+        <span onClick={showModal} className={style.signUpBtn}>
+          Sign up here!
+        </span>
       )}
       <Modal
         title="SIGN UP FORM"
         visible={visible}
-        onOk={handleOk}
+        onOk={handleSubmit}
         confirmLoading={confirmLoading}
         onCancel={handleCancel}
         okText="Submit"
-        bodyStyle={{ height: 650, paddingTop: 10 }}
+        bodyStyle={{ height: 570, paddingTop: 10 }}
+        okType="default"
+        width={400}
       >
         <Form
-          onSubmit={handleOk}
-          labelCol={{
-            span: 10,
-          }}
-          wrapperCol={{
-            span: 28,
-          }}
+          onSubmit={handleSubmit}
           layout="vertical"
           initialValues={{
             size: componentSize,
           }}
           onValuesChange={onFormLayoutChange}
           size={componentSize}
+          style={{ marginBottom: 0 }}
         >
-          <Form.Item label="What should we call you?" htmlFor="formName">
+          <Form.Item
+            label="What should we call you?"
+            htmlFor="formName"
+            style={{ marginBottom: 10 }}
+          >
             <Input
               id="formName"
               name="name"
@@ -142,6 +138,7 @@ export const SignUpModal = () => {
                 message: "Please input your E-mail!",
               },
             ]}
+            style={{ marginBottom: 10 }}
           >
             <Input
               id="formEmail"
@@ -171,6 +168,7 @@ export const SignUpModal = () => {
                 },
               }),
             ]}
+            style={{ marginBottom: 10 }}
           >
             <Input
               id="formConfirmEmail"
@@ -190,6 +188,7 @@ export const SignUpModal = () => {
               },
             ]}
             hasFeedback
+            style={{ marginBottom: 10 }}
           >
             <Input.Password
               id="formPassword"
@@ -223,6 +222,7 @@ export const SignUpModal = () => {
                 },
               }),
             ]}
+            style={{ marginBottom: 10 }}
           >
             <Input.Password
               id="formConfirmPassword"
@@ -232,7 +232,11 @@ export const SignUpModal = () => {
               onChange={handleChange}
             />
           </Form.Item>
-          <Form.Item label="Profile Picture" htmlFor="formImg">
+          <Form.Item
+            label="Profile Picture"
+            htmlFor="formImg"
+            style={{ marginBottom: 10 }}
+          >
             <Input
               style={{ height: 38 }}
               type="file"
@@ -240,12 +244,15 @@ export const SignUpModal = () => {
               onChange={handleImage}
             />
           </Form.Item>
-          <Form.Item label="What's your date of birth?">
+          <Form.Item
+            label="What's your date of birth?"
+            style={{ marginBottom: 20 }}
+          >
             <DatePicker />
           </Form.Item>
           <Checkbox>Sign up for our newsletter</Checkbox>
         </Form>
       </Modal>
-    </div>
+    </section>
   );
 };

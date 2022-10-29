@@ -1,14 +1,12 @@
-import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../contexts/authContext";
 import { api } from "../../../api/api";
-import "./style.module.css";
-import style from "./style.module.css"
+import style from "./LoginModal.module.css";
+import { useNavigate } from "react-router-dom";
+import React, { useState, useContext } from "react";
 import { Modal, Checkbox, Form, Input } from "antd";
+import { AuthContext } from "../../../contexts/authContext";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 
 export const LoginModal = () => {
-
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
   };
@@ -47,7 +45,6 @@ export const LoginModal = () => {
     setVisible(false);
   };
 
-
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -63,7 +60,7 @@ export const LoginModal = () => {
 
   return (
     <>
-      <p type="primary" onClick={showModal} className={style.text}>
+      <p type="primary" onClick={showModal} className={style.logInText}>
         Log In
       </p>
       <Modal
@@ -74,13 +71,15 @@ export const LoginModal = () => {
         onCancel={handleCancel}
         closable={false}
         okText="Log In"
-        bodyStyle={{ height: 170, paddingTop: 20 }}
+        okType="default"
+        bodyStyle={{ height: 240, paddingTop: 10 }}
         width={400}
       >
         <div>
           <Form
             name="normal_login"
             className="login-form"
+            layout="vertical"
             onSubmit={handleOk}
             initialValues={{
               remember: true,
@@ -89,6 +88,7 @@ export const LoginModal = () => {
           >
             <Form.Item
               name="email"
+              label="Email"
               rules={[
                 {
                   required: true,
@@ -108,6 +108,7 @@ export const LoginModal = () => {
             </Form.Item>
             <Form.Item
               name="password"
+              label="Password"
               rules={[
                 {
                   required: true,
@@ -118,7 +119,7 @@ export const LoginModal = () => {
               <Input
                 prefix={<LockOutlined className="site-form-item-icon" />}
                 type="password"
-                id="formPasword"
+                id="formPassword"
                 placeholder="Password"
                 name="password"
                 value={form.password}
