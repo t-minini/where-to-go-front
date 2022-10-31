@@ -1,8 +1,8 @@
-import style from "./style.module.css";
+import style from "./HowWorks.module.css";
 
 export function HowWorks() {
   return (
-    <div className={style.howWorksContainer}>
+    <section className={style.howWorksContainer} id="howWorks">
       <div>
         <h1>How does it work?</h1>
       </div>
@@ -27,18 +27,17 @@ export function HowWorks() {
           </div>
         </div>
         <div className={style.card}>
-        <div className={style.cardContent}>
-        <h2>3</h2>
-          <h3>Pack your bags.</h3>
-          <p>
-            Each package includes a ‘Before You Go’ guide and a series of
-            envelopes that will lead you to several surprise destinations on
-            your trip.
-          </p>
-        </div>
-          
+          <div className={style.cardContent}>
+            <h2>3</h2>
+            <h3>Pack your bags.</h3>
+            <p>
+              Each package includes a ‘Before You Go’ guide and a series of
+              envelopes that will lead you to several surprise destinations on
+              your trip.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -29,6 +29,31 @@ export function Navbar() {
         <NavLink to="/store" className={style.navbarText}>
           Store
         </NavLink>
+        {location.pathname === "/" && (
+          <Link
+            className={style.navbarText}
+            to="howWorks"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            About
+          </Link>
+        )}
+
+        {location.pathname === "/" && (
+          <Link
+            className={style.navbarText}
+            to="places"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Places
+          </Link>
+        )}
 
         {location.pathname === "/" && (
           <Link
@@ -39,7 +64,7 @@ export function Navbar() {
             offset={50}
             duration={500}
           >
-            Contact Us
+            Contact
           </Link>
         )}
 

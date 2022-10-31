@@ -1,6 +1,6 @@
 import style from "./style.module.css";
 import { WhereWannaGo } from "../../components/HomePage/WhereWannaGo/WhereWannaGo";
-import { HowWorks } from "../../components/HomePage/howWorks";
+import { HowWorks } from "../../components/HomePage/HowWorks/HowWorks";
 import { TripSlider } from "../../components/HomePage/tripsSlider";
 import { Envelopes } from "../../components/HomePage/envelopes";
 
