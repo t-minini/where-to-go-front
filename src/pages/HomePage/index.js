@@ -1,16 +1,16 @@
 import style from "./style.module.css";
-import { WhereWannaGo } from "../../components/HomePage/WhereWannaGo/WhereWannaGo";
 import { HowWorks } from "../../components/HomePage/HowWorks/HowWorks";
+import { Envelopes } from "../../components/HomePage/Envelopes/Envelopes";
 import { TripSlider } from "../../components/HomePage/TripsSlider/TripsSlider";
-import { Envelopes } from "../../components/HomePage/envelopes";
+import { WhereWannaGo } from "../../components/HomePage/WhereWannaGo/WhereWannaGo";
 
 export function HomePage() {
   return (
     <div className={style.homePage}>
       <WhereWannaGo />
       <HowWorks />
-      <TripSlider />
       <Envelopes />
+      <TripSlider />
     </div>
   );
 }
