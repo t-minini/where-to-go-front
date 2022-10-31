@@ -1,6 +1,6 @@
 .howWorksContainer {
   background-color: #ffffff;
-  height: 95vh;
+  height: max-content;
   font-family: "Roboto", sans-serif;
   width: 100vw;
   padding: 80px 40px;
@@ -29,13 +29,12 @@
 }
 .card {
   width: 480px;
-  height: 320px;
+  max-height: max-content;
   padding: 20px;
   background-color: #e4e3df;
+  margin: 10px;
 }
 .cardContent {
-  position: relative;
-  bottom: 67px;
   display: flex;
   flex-direction: column;
   align-items: center;
