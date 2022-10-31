@@ -1,5 +1,5 @@
-import style from "./style.module.css";
 import { Carousel } from "antd";
+import style from "./TripsSlider.module.css";
 
 const contentStyle = {
   height: "800px",
@@ -11,7 +11,7 @@ const contentStyle = {
 
 export function TripSlider() {
   return (
-    <div className={style.sliderComp}>
+    <section id="slider">
       <Carousel autoplay>
         <div>
           <h3 style={contentStyle} className={style.img1}>
@@ -44,6 +44,6 @@ export function TripSlider() {
           </h3>
         </div>
       </Carousel>
-    </div>
+    </section>
   );
 }

@@ -45,7 +45,7 @@ export function Navbar() {
         {location.pathname === "/" && (
           <Link
             className={style.navbarText}
-            to="places"
+            to="slider"
             spy={true}
             smooth={true}
             offset={-70}
