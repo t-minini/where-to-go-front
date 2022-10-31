@@ -1,26 +1,13 @@
-# Project #3: <en> Where to Go? (Front-end)
+# Where to Go?
 
 ## About the project 💭
 
-In our final project, we created e-commerce in the travel service area, focused on those looking for an experience beyond the standard packages offered by travel agencies. Our product provides a unique route to a vast number of destinations around the world.
+We created an e-commerce in the travel service area, focused on those looking for an experience beyond the standard packages offered by travel agencies. Our product provides a unique route to a vast number of destinations around the world.
 Some already know where they are going, and our experiences inspire others. But everyone experiences a great adventure.
 
-**Where To Go** It works like this, the person chooses the destination and receives a surprise itinerary in the "treasure hunt" model with places to be visited sequentially, finding clues along the way. The locations and activities are curated by our team and include packages that adapt to any travel group, from a solo traveller to a large group of people.
+It works like this: the person chooses the destination and receives a surprise itinerary in the "treasure hunt" model with places to be visited sequentially, finding clues along the way. The locations and activities are curated by our team and include packages that adapt to any travel group, from a solo traveller to a large group of people.
 
-[Where to Go? Link here!](https://project-three-where-to-go.netlify.app/)
-
-## Deploy Platforms 🖥
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-
-## GitHub Repositories 👾
-### Front-end here!
-
-[![frontEnd](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini/project-three-front-end)
-
-### Back-end here!
-
-[![backEnd](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini/project-three-back-end)
+You can access the website [here!](https://wheretogo-tm.netlify.app/)
 
 ## Tools Used 🛠
 
@@ -36,6 +23,19 @@ Some already know where they are going, and our experiences inspire others. But 
 
 [![VsCode](https://camo.githubusercontent.com/42ada9cc774b9d2b4cf35691820a881d70657ae42c3a074f00c7e9add6352361/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f56697375616c5f53747564696f5f436f64652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c25323073747564696f253230636f6465266c6f676f436f6c6f723d7768697465)](https://camo.githubusercontent.com/42ada9cc774b9d2b4cf35691820a881d70657ae42c3a074f00c7e9add6352361/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f56697375616c5f53747564696f5f436f64652d3030373844343f7374796c653d666f722d7468652d6261646765266c6f676f3d76697375616c25323073747564696f253230636f6465266c6f676f436f6c6f723d7768697465) 
 ![Slack](https://camo.githubusercontent.com/870d2945e15dde83583f64ea1f3f4471702e45bf30fa884412da74cb7731ae42/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536c61636b2d3441313534423f7374796c653d666f722d7468652d6261646765266c6f676f3d736c61636b266c6f676f436f6c6f723d7768697465)
+
+## Deploy Platforms 🖥
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
+## GitHub Repositories 👾
+### Front-end here!
+
+[![frontEnd](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini/project-three-front-end)
+
+### Back-end here!
+
+[![backEnd](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/t-minini/project-three-back-end)
 
 
 ## Here, you can Contact or Connect with us! ✉️
