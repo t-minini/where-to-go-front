@@ -1,0 +1,19 @@
+.backToTop {
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  z-index: 1;
+  border: solid 1px #dedbd2;
+  background-color: #dedbd2;
+  cursor: pointer;
+  /* width: 100px; */
+  /* height: 100px; */
+}
+
+.backToTop:hover {
+  border: solid 1px #4a5759;
+}

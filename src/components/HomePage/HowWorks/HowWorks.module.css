@@ -1,7 +1,6 @@
 .howWorksContainer {
   background-color: #ffffff;
   height: max-content;
-  font-family: "Roboto", sans-serif;
   width: 100vw;
   padding: 80px 40px;
 }
@@ -9,23 +8,19 @@
   text-align: center;
   font-size: 6.5rem;
   margin-bottom: 120px;
-  font-family: "Roboto", sans-serif;
 }
 .cardContent h2 {
   font-size: 7.5rem;
   margin-bottom: 10px;
   line-height: 6.25rem;
-  font-family: "Roboto", sans-serif;
 }
 .cardContent h3 {
   text-align: center;
   font-size: 2.5rem;
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
 }
 .cardContent p {
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
 }
 .card {
   width: 480px;
