@@ -9,7 +9,7 @@ import { EditTrip } from "./components/HomeAdmin/EditTrip";
 import { ProtectedRouteAdmin } from "./components/ProtectedRouteAdmin";
 import { HomeAdmin } from "./pages/HomeAdmin";
 import { Navbar } from "./components/HomePage/Navbar/Navbar";
-import { ContactUs } from "./components/HomePage/contactUs";
+import { Contact } from "./components/HomePage/Contact/Contact";
 
 function App() {
   return (
@@ -34,7 +34,7 @@ function App() {
           />
         </Routes>
       </AuthContextComponent>
-      <ContactUs />
+      <Contact />
     </>
   );
 }

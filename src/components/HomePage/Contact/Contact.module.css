@@ -1,0 +1,36 @@
+.contactContainer {
+  background-color: #4a5759;
+  height: max-content;
+  padding: 40px;
+}
+.contactContainer h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.card {
+  text-align: center;
+  margin: auto;
+}
+
+.cardContent h2 {
+  font-size: 2rem;
+}
+
+.icons img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.cardImg {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
