@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { HomePage } from "./pages/HomePage/index";
+import { HomePage } from "./pages/HomePage/HomePage";
 import { AuthContextComponent } from "./contexts/authContext";
 import { HomeUser } from "./pages/HomeUser/index";
 import { ErrorPage } from "./pages/ErrorPage";

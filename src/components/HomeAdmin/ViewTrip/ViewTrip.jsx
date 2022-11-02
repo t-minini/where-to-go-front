@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { api } from "../../../api/api";
 import { Card, Button } from "antd";
-import style from "../ViewTrip/style.module.css";
+import { api } from "../../../api/api";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import style from "../ViewTrip/ViewTrip.module.css";
 
 export function ViewTrip() {
   const [trips, setTrips] = useState([
@@ -25,16 +25,14 @@ export function ViewTrip() {
     fetchTrips();
   }, []);
   return (
-    <div className={style.divDVT}>
+    <section className={style.divTrips}>
       {trips.map((currentTrip) => {
         return (
           <div key={`${currentTrip._id}trips`}>
-            <div>
               <Card
-                hoverable
                 style={{
-                  width: 250,
-                  height: 450,
+                  width: 260,
+                  height: "max-content",
                 }}
                 cover={
                   <img
@@ -46,17 +44,16 @@ export function ViewTrip() {
               >
                 <Meta
                   title={currentTrip.destination}
-                  description={currentTrip.description}
-                  style={{ height: 230 }}
+                  // description={currentTrip.description}
+                  style={{ margin: "auto", marginBottom: "10px" }}
                 />
                 <Link to={`/admin/trip/${currentTrip._id}`}>
-                  <Button>Edit</Button>
+                  <Button>Edit Trip</Button>
                 </Link>
               </Card>
-            </div>
           </div>
         );
       })}
-    </div>
+    </section>
   );
 }
