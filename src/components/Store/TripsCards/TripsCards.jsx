@@ -5,7 +5,7 @@ import TripDetails from "../TripDetails/TripDetails";
 import style from "../TripsCards/TripsCards.module.css";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 
-export function TripCard() {
+export function TripsCards() {
   const { addItem } = useCart();
   const [clone, setClone] = useState([]);
   const [trips, setTrips] = useState([
@@ -83,6 +83,7 @@ export function TripCard() {
       </div>
       <div className={style.cardsDiv}>
         {trips.map((currentTrip) => {
+          console.log(currentTrip)
           let item = {
             ...currentTrip,
             id: currentTrip._id,
@@ -90,7 +91,7 @@ export function TripCard() {
           };
 
           return (
-            <div className={style.card} key={currentTrip._id}>
+            <div className={style.card} key={currentTrip.description}>
               <img
                 className={style.cardImg}
                 src={currentTrip.tripImg}

@@ -3,7 +3,7 @@ import Draggable from 'react-draggable';
 import React, { useRef, useState } from 'react';
 
 
-const CardDetails = ({ trip }) => {
+const TripDetails = ({ trip }) => {
 	const [visible, setVisible] = useState(false);
 	const [disabled, setDisabled] = useState(false);
 	const [bounds, setBounds] = useState({
@@ -63,8 +63,7 @@ const CardDetails = ({ trip }) => {
 							}}
 							onMouseOut={() => {
 								setDisabled(true);
-							}} // fix eslintjsx-a11y/mouse-events-have-key-events
-							// https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/mouse-events-have-key-events.md
+							}}
 							onFocus={() => {}}
 							onBlur={() => {}} // end
 						>
@@ -94,4 +93,4 @@ const CardDetails = ({ trip }) => {
 	);
 };
 
-export default CardDetails;
+export default TripDetails;
