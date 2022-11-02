@@ -1,0 +1,50 @@
+.emptyCart {
+  font-size: 1.25rem;
+  margin-top: 50px;
+}
+
+.cartContainer {
+  max-width: 100%;
+  min-height: max-content;
+  font-size: 20px;
+  text-align: left;
+}
+
+.thPrice {
+  text-align: center;
+}
+.thQuant {
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.tdDestination {
+  width: 50%;
+}
+.tdPrice {
+  width: 20%;
+  text-align: center;
+}
+.tdQuantity {
+  width: 20%;
+  text-align: center;
+}
+
+.totalTr {
+ height: 80px;
+}
+
+.totals {
+  text-align: center;
+}
+
+.btnDiv {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}

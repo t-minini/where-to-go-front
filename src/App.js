@@ -4,7 +4,7 @@ import { AuthContextComponent } from "./contexts/authContext";
 import { HomeUser } from "./pages/HomeUser/index";
 import { ErrorPage } from "./pages/ErrorPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
-import { Store } from "./pages/Store/index";
+import { StorePage } from "./pages/StorePage/StorePage";
 import { EditTrip } from "./components/HomeAdmin/EditTrip";
 import { ProtectedRouteAdmin } from "./components/ProtectedRouteAdmin";
 import { HomeAdmin } from "./pages/HomeAdmin";
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/store" element={<Store />} />
+          <Route path="/store" element={<StorePage />} />
           <Route path="*" element={<ErrorPage />} />
           <Route
             path="/admin/trip/:id"

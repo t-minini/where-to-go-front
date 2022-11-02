@@ -11,7 +11,7 @@ export function Envelopes() {
         <p className={style.text}>
           "You will receive a series of beautiful sealed envelopes that contain
           the next exciting steps of your way journey. The package came with
-          four surprise stops.""
+          four surprise stops."
         </p>
         <img src={Envelope2} alt="envelop" className={style.img2} />
       </div>
