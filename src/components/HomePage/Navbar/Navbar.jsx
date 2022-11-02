@@ -26,9 +26,11 @@ export function Navbar() {
         <img src={Logo} alt="logo" className={style.logoImg} />
       </NavLink>
       <div className={style.navbarContent}>
+      {location.pathname === "/" && (
         <NavLink to="/store" className={style.navbarText}>
           Store
         </NavLink>
+        )}
         {location.pathname === "/" && (
           <Link
             className={style.navbarText}

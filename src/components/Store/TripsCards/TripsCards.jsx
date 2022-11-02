@@ -1,7 +1,7 @@
 import { api } from "../../../api/api";
 import { useCart } from "react-use-cart";
 import { useState, useEffect } from "react";
-import CardDetails from "../CardDetails/index";
+import TripDetails from "../TripDetails/TripDetails";
 import style from "../TripsCards/TripsCards.module.css";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 
@@ -36,83 +36,80 @@ export function TripCard() {
     setTrips(filteredCategory);
   }
   return (
-      <section className={style.cardContainer}>
-        <div className={style.categoriesDiv}>
-          <span
-            onClick={() => {
-              setTrips(clone);
-            }}
-          >
-            All Trips
-          </span>
-          <span
-            onClick={() => {
-              handleCategory("Adventure");
-            }}
-          >
-            Adventure
-          </span>
-          <span
-            onClick={() => {
-              handleCategory("Romance");
-            }}
-          >
-            Romance
-          </span>
-          <span
-            onClick={() => {
-              handleCategory("Culture");
-            }}
-          >
-            Culture
-          </span>
-          <span
-            onClick={() => {
-              handleCategory("Nightlife");
-            }}
-          >
-            Nightlife
-          </span>
-          <span
-            onClick={() => {
-              handleCategory("Relax");
-            }}
-          >
-            Relax
-          </span>
-        </div>
+    <section>
+      <div className={style.categoriesDiv}>
+        <span
+          onClick={() => {
+            setTrips(clone);
+          }}
+        >
+          All Trips
+        </span>
+        <span
+          onClick={() => {
+            handleCategory("Adventure");
+          }}
+        >
+          Adventure
+        </span>
+        <span
+          onClick={() => {
+            handleCategory("Romance");
+          }}
+        >
+          Romance
+        </span>
+        <span
+          onClick={() => {
+            handleCategory("Culture");
+          }}
+        >
+          Culture
+        </span>
+        <span
+          onClick={() => {
+            handleCategory("Nightlife");
+          }}
+        >
+          Nightlife
+        </span>
+        <span
+          onClick={() => {
+            handleCategory("Relax");
+          }}
+        >
+          Relax
+        </span>
+      </div>
+      <div className={style.cardsDiv}>
+        {trips.map((currentTrip) => {
+          let item = {
+            ...currentTrip,
+            id: currentTrip._id,
+            price: currentTrip.unitPrice,
+          };
 
-        <div className={style.cardsDiv}>
-          {trips.map((currentTrip) => {
-            let item = {
-              ...currentTrip,
-              id: currentTrip._id,
-              price: currentTrip.unitPrice,
-            };
-
-            return (
-              <div className={style.card} key={currentTrip._Id}>
-                <img
-                  className={style.cardImg}
-                  src={currentTrip.tripImg}
-                  alt={currentTrip.destination}
-                />
-                <div className={style.infoCards}>
-                  <p className={style.infoDestination}>
-                    {currentTrip.destination}
-                  </p>
-                  <p className={style.infoPrice}>€{currentTrip.unitPrice}</p>
-                </div>
-                <div className={style.cardGroupBtn}>
-                  <CardDetails trip={currentTrip} />
-                  <p onClick={() => addItem(item)}>
-                    <ShoppingCartOutlined style={{ fontSize: 30 }} />
-                  </p>
-                </div>
+          return (
+            <div className={style.card} key={currentTrip._id}>
+              <img
+                className={style.cardImg}
+                src={currentTrip.tripImg}
+                alt={currentTrip.destination}
+              />
+              <div className={style.infoCards}>
+                <p>{currentTrip.destination}</p>
+                <p>€{currentTrip.unitPrice}</p>
               </div>
-            );
-          })}
-        </div>
-      </section>
+              <div className={style.cardBtn}>
+                <TripDetails trip={currentTrip} />
+                <span onClick={() => addItem(item)}>
+                  <ShoppingCartOutlined style={{ fontSize: 30 }} />
+                </span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }

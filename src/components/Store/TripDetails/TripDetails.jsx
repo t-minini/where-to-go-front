@@ -1,6 +1,7 @@
 import { Button, Modal } from 'antd';
-import React, { useRef, useState } from 'react';
 import Draggable from 'react-draggable';
+import React, { useRef, useState } from 'react';
+
 
 const CardDetails = ({ trip }) => {
 	const [visible, setVisible] = useState(false);

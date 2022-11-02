@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "antd";
 import { useCart } from "react-use-cart";
 import style from "../Cart/Cart.module.css";
-import { PaymentModal } from "../PaymentModal/index";
+import { PaymentModal } from "../PaymentModal/PaymentModal";
 import {
   MinusCircleOutlined,
   PlusCircleOutlined,

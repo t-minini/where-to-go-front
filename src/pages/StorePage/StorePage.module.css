@@ -5,17 +5,19 @@
 }
 
 .cardsContainer {
-  width: 75%;
+  width: 70%;
   padding-top: 70px;
 }
 
 .cart {
-  min-width: 25%;
+  min-width: 30%;
   padding-top: 80px;
   text-align: center;
+
 }
 
 .cart h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0;
+  margin-bottom: 10px;
 }
