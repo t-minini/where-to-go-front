@@ -4,8 +4,8 @@ import { useState } from "react";
 import { ViewTrip } from "../ViewTrip/ViewTrip";
 import { ViewUser } from "../ViewUser";
 import { ViewOrder } from "../ViewOrder";
-import { CreateTrip } from "../CreateTrip";
-import { CreateNewTrip } from "../CreateNewTrip";
+// import { CreateTrip } from "../CreateTrip";
+import { AddNewTrip } from "../AddNewTrip/AddNewTrip";
 import style from "./TripsOrdersUsers.module.css";
 
 export function TripsOrdersUsers() {
@@ -41,8 +41,8 @@ export function TripsOrdersUsers() {
         <Col>
           <Button onClick={handleUsers}>Users</Button>
         </Col>
-        <Col span={100}>{showTrips && <CreateTrip />}</Col>
-        <CreateNewTrip />
+        {/* <Col span={100}>{showTrips && <CreateTrip />}</Col> */}
+        <AddNewTrip />
       </Row>
       {showTrips && <ViewTrip />}
       {showOrders && <ViewOrder />}
