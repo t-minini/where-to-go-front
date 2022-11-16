@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { api } from "../../../api/api";
 import { Form, Card, Input, Button } from "antd";
-import style from "./style.module.css";
+import style from "./EditTrip.module.css";
 
 // import { Navbar } from "../../HomePage/Navbar/Navbar";
 

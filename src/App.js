@@ -5,7 +5,7 @@ import { HomeUser } from "./pages/HomeUser/index";
 import { ErrorPage } from "./pages/ErrorPage";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import { StorePage } from "./pages/StorePage/StorePage";
-import { EditTrip } from "./components/HomeAdmin/EditTrip";
+import { EditTrip } from "./components/HomeAdmin/EditTrip/EditTrip";
 import { ProtectedRouteAdmin } from "./components/ProtectedRouteAdmin";
 import { HomeAdmin } from "./pages/HomeAdmin";
 import { Navbar } from "./components/HomePage/Navbar/Navbar";
